@@ -1,0 +1,18 @@
+# MalLLM - Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# === STATIC ANALYSIS ===
+pefile==2024.8.26          # Parse Windows PE (Portable Executable) files
+                           # Gives us: headers, imports, sections, entropy
+
+# === LLM API ===
+openai==2.32.0            # Official OpenAI Python client (GPT-4.1)
+
+# === DATA & UTILS ===
+python-dotenv==1.2.2      # Load API keys from .env file (security best practice)
+colorama==0.4.6           # Colored terminal output (better readability)
+tqdm==4.67.3              # Progress bars for batch analysis
+
+# === EVALUATION (Chapter 6) ===
+scikit-learn==1.8.0       # Accuracy, Precision, Recall, F1, Confusion Matrix
+numpy==2.4.4             # Numerical operations (used by sklearn)
